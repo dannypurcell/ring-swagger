@@ -205,7 +205,8 @@
 
       (fact "extra metadata is present on schema objects"
         (rsjs/schema-object schema) => (contains
-                                         {:properties {:name {:type "string"}
+                                         {:title "schema"
+                                          :properties {:name {:type "string"}
                                                        :title {:type "string"}}
                                           :minProperties 1
                                           :additionalProperties false})))))
